@@ -1,0 +1,22 @@
+div{
+    font-family: "Franklin Gothic Medium";
+    font-style: italic;
+    line-height: 30px;
+}
+
+
+
+legend,label, th{
+    color:goldenrod;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+#tableFac, #banknotes{
+    float: left;
+    margin-right: 20px;
+}
+

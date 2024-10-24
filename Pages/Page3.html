@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <!-- Berrio,Alejandro
+         Description: Section 1 Projet Dev Web Client
+	      Date: 2024-03-21               -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>Projet Alejandro Berrio</title>
+   <style type="text/css">
+    div.map{
+      display: flex;
+      justify-content: center;
+    }
+   </style>
+   <script type="text/javascript" src="../JS/CalculerTemp.js">
+   </script>
+ </head>
+ <body onload="Temp()">
+  <div class="map">
+    <img src="../Imgs/Map.png" usemap="#BossMap" alt="map"/>
+    <map name="BossMap" id="map">
+      <area shape="rect" coords="375, 704, 484, 823" href="./Mapping/Godrick.html" onclick="Temp2()"/>
+      <area shape="rect" coords="871, 775, 970, 870" href="./Mapping/Radahn.html" onclick="Temp2()" />
+      <area shape="rect" coords="213, 514, 306, 625" href="./Mapping/Rennala.html" onclick="Temp2()" />
+      <area shape="rect" coords="274, 234, 361, 313" href="./Mapping/Rykard.html" onclick="Temp2()" />
+      <area shape="rect" coords="563, 304, 633, 408" href="./Mapping/Godfrey.html" onclick="Temp2()" />
+      <area shape="rect" coords="662, 386, 729, 518" href="./Mapping/Radagon.html" onclick="Temp2()" />
+      <area shape="rect" coords="739, 21, 850, 70" href="./Mapping/Malenia.html" onclick="Temp2()" />
+      <area shape="rect" coords="833, 279, 971, 342" href="./Mapping/FireGiant.html" onclick="Temp2()" />
+      <area shape="rect" coords="1163, 458, 1285, 569" href="./Mapping/Maliketh.html" onclick="Temp2()" />
+    </map>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <!-- Berrio,Alejandro
+         Description: Section 1 Projet Dev Web Client
+	      Date: 2024-03-21               -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>Projet Alejandro Berrio</title>
+   <link rel="stylesheet" href="../CSS/Page5Css.css"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script type="text/javascript" src="../JS/Buying.js"></script>
+ </head>
+ <body>
+  <div class="Formulaire">
+    <form action="file_on_server_side" method="post">
+      <div id="SelectionItem">
+        <fieldset id="Details">
+          <legend id="DetailsT">Products to Buy</legend><br />
+          <label for="WeaponsOptions">Name of Weapon: </label>
+          <select name="WeaponsOptions" id="WeaponsOptions" required>
+            <option value="None">None</option>
+            <option value="GraftedBlade">Grafted Blade</option>
+            <option value="StarsCourage">Stars Courage</option>
+            <option value="Moonveil">Moonveil</option>
+            <option value="MeteoricOre">Meteoric Ore</option>
+            <option value="BlackKnife">Black Knife</option>
+          </select>
+          <br /><br />
+          <label for="ProdID">Product ID:</label>
+          <input id="ProdID" type="text" name="ProdID" maxlength="5" size="5" readonly><br /><br />
+          <label for="ImageProduit">Image of the product:</label><br />
+          <div id="ImageProduit">
+            <img id="ImagePrin" src="" width="100x100"/>
+          </div>
+          <label for="Prix">Prix:</label>
+          <p id="Prix"><span id="PrixST">0.0</span> CAD</p>
+          <label for="DescriptionProduit">Product Description:</label><br />
+          <textarea id="DescriptionProduit" rows="5" cols="30" readonly></textarea><br /><br />
+          <label for="Quantite">Quantity: </label>
+          <input type="number" id="Quantite" name="Quantite" min="1" max="100"><br /><br />
+          <input type="button" id="btnAdd" value="Add Item">
+        </fieldset>
+      </div>
+      <div id="AcheterSection">
+        <fieldset id="Confirmation">
+          <legend id="ConfirmationT">Confirmation</legend>
+          <table border="1">
+            <tr>
+              <th>ID ITEM</th>
+              <th>IMAGE</th>
+              <th>QUANTITY</th>
+              <th>PRIX TOTAL</th>
+            </tr>
+            <tr>
+              <td>WPN01</td>
+              <td><img src="../Imgs/ER_Icon_weapon_Grafted_Blade_Greatsword.webp" width="100x100"/></td>
+              <td id="QWP1">0</td>
+              <td><span id="PRWP1">0.0</span> CAD</td>
+            </tr>
+            <tr>
+              <td>WPN02</td>
+              <td><img src="../Imgs/ER_Icon_weapon_Starscourge_Greatsword.webp" width="100x100"/></td>
+              <td id="QWP2">0</td>
+              <td><span id="PRWP2">0.0</span> CAD</td>
+            </tr>
+            <tr>
+              <td>WPN03</td>
+              <td><img src="../Imgs/ER_Icon_weapon_Moonveil.webp" width="100x100"/></td>
+              <td id="QWP3">0</td>
+              <td><span id="PRWP3">0.0</span> CAD</td>
+            </tr>
+            <tr>
+              <td>WPN04</td>
+              <td><img src="../Imgs/ER_Icon_weapon_Meteoric_Ore_Blade.webp" width="100x100"/></td>
+              <td id="QWP4">0</td>
+              <td><span id="PRWP4">0.0</span> CAD</td>
+            </tr>
+            <tr>
+              <td>WPN05</td>
+              <td><img src="../Imgs/ER_Icon_weapon_Black_Knife.webp" width="100x100"/></td>
+              <td id="QWP5">0</td>
+              <td><span id="PRWP5">0.0</span> CAD</td>
+            </tr>
+            <tr>
+              <th colspan="3">TOTAL (Before Taxes)</th>
+              <th><span id="TotalST">0.0</span> CAD</th>
+            </tr>
+          </table>
+          <br />
+          <input type="button" id="Purchase" value="Purchase" onclick="purchase()"> 
+          &nbsp;
+          <input type="button" id="DeletePurchase" value="Delete Purchase" onclick="deletePurchase()">
+        </fieldset>
+      </div>
+    </form>
+    <div id="decoration">
+      <img src="../Imgs/y1udzivcql471.png" width="400x400" style="margin-top: 15px;" >
+    </div>
+  </div>
+ </body>
+</html>

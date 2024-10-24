@@ -1,0 +1,28 @@
+div {
+  font-family: "Franklin Gothic Medium";
+  font-style: italic;
+  line-height: 30px;
+}
+
+legend,
+label,
+h3 {
+  color: goldenrod;
+  text-align: center;
+}
+
+span {
+  color: black;
+}
+
+#cardSection,
+#total,
+#billingSection,
+#AddressSection {
+  float: left;
+  margin-right: 50px;
+}
+
+#pay{
+    float:left;
+}

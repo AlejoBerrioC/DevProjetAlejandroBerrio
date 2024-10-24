@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <!-- Berrio,Alejandro
+         Description: Section 1 Projet Dev Web Client
+	      Date: 2024-03-21               -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>Projet Alejandro Berrio</title>
+   <link rel="stylesheet" href="../CSS/Page6Css.css"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script type="text/javascript" src="../JS/Buying2.js"></script>
+ </head>
+ <body onload="f1()">
+  <div id="tableFac">
+    <table id="billTable" border="1">
+      <tr>
+        <th colspan="2">INVOICE DETAILS</th>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <th>Prix Total</th>
+      </tr>
+      <tr>
+        <th>TOTAL (Before Taxes):</th>
+        <th><span id="TotalBTaxes"></span></th>
+      </tr>
+      <tr>
+        <td>GST (5%): </td>
+        <td><span id="totGST"></span></td>
+      </tr>
+      <tr>
+        <td>QST (9.975%): </td>
+        <td><span id="totQST"></span></td>
+      </tr>
+      <tr>
+        <th>TOTAL (After Taxes):</th>
+        <th><span id="TotalATaxes"></span></th>
+      </tr>
+    </table>
+    <br />
+    <input type="button" value="Banknotes Calculation" onclick="displayMoney(totalA)"><br />
+    <input type="button" value="Go to pay section" onclick="paysection()">
+  </div>
+  <div id="banknotes">
+    <table border="1">
+      <thead><tr><th>The total amount in CAD dollars: <span id="display"></span></th></tr>
+      </thead>
+      <tbody>
+      <tr>
+          <td id="hundred">100 dollars bills: <span id="hun"></span>
+        </br> Amount: <span id="totalHun"></span>
+        </br><img src="" id="bn100"></td>
+          <td>Toonie: <span id="toon"></span></br> Amount: <span id="totalToon"></span>
+        </br><img src="" id="bn02"></td>
+        </tr>
+        <tr>
+          <td id="fif">50 dollars bills: <span id="fifty"></span>
+        </br> Amount: <span id="totalFifty"></span>
+        </br><img  src="" id="bn50"></td>
+          <td>Loonies:<span id="one"></span></br> Amount: <span id="totalOne"></span>
+        </br><img  src="" id="bn01"></td>
+        </tr>
+       <tr>
+          <td>20 dollars bills: <span id="twenty"></span></br> Amount: <span id="totalTwenty"></span>
+        </br><img  src="" id="bn20"></td>
+          <td>Quaters: <span id="quarter"></span></br> Amount: <span id="totalQuarter"></span>
+        </br><img  src="" id="bn25"></td>
+        </tr>
+       <tr>
+          <td>10 dollars bills:<span id="ten"></span></br> Amount: <span id="totalTen"></span>
+        </br><img  src="" id="bn10"></td>
+          <td>Dimes: <span id="dime"></span></br> Amount: <span id="totalDime"></span>
+        </br><img  src="" id="bn10c"></td>
+        </tr>
+      <tr>
+          <td>5 dollars bills: <span id="five"></span></br> Amount: <span id="totalFive"></span>
+        </br><img  src="" id="bn05"></td>
+          <td>Nickels: <span id="nickel"></span></br> Amount: <span id="totalNickel"></span>
+        </br><img  src="" id="bn5c"></td>
+        </tr>
+      </tbody>
+      </table>
+  </div>
+ </body>
+</html>

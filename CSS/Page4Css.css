@@ -1,0 +1,33 @@
+div.images{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(218, 165, 32, 0.17);
+    width: 60%;
+    padding:10px 0px 10px 0px;
+    margin-top: 50px;
+    float:left;
+}
+
+div.desc{
+    border: 1px dashed rgba(218, 165, 32, 0.17);
+    width: 30%;
+    padding:10px 0px 10px 10px;
+    margin-top: 50px;
+    float:left;
+    margin-left: 10px;
+}
+
+div{
+    font-family: "Franklin Gothic Medium";
+    font-style: italic;
+    line-height: 30px;
+}
+h2,h3{
+    color:goldenrod;
+}
+
+span{
+    color: black;
+}
+
+

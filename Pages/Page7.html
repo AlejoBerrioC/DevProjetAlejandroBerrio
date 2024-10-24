@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <!-- Berrio,Alejandro
+         Description: Section 1 Projet Dev Web Client
+	      Date: 2024-03-21               -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>Projet Alejandro Berrio</title>
+   <link rel="stylesheet" href="../CSS/Page7Css.css"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script type="text/javascript" src="../JS/PaySection.js"></script>
+ </head>
+ <body onload="f2()">
+  <div id="payForm">
+    <form action="file_on_server_side" method="post">
+      <div id="paySection">
+        <div id="cardSection">
+          <fieldset id="cardDetails">
+            <legend>Card Details</legend>
+            <label for="payMethod">Card:</label><br />
+            <select name="payMethod" id="payMethod">
+              <option value="None">None</option>
+              <option value="MasterCard">Master Card</option>
+              <option value="Visa">Visa</option>
+              <option value="AmericanExpress">American Express</option>
+            </select><br /><br />
+            <img src="../Imgs/CarteCredit.png" width="200x200"/>
+            <br /><br />
+            <label for="cardNumber">Card Number:</label><br />
+            <input type="text" id="cardNumber" name="cardNumber" maxlength="16"><br /><br />
+            <label for="expirDate">Expiration Date:</label><br />
+            <input type="number" id="month" name="month" min="1" max="12" style="width: 35px">
+            <input type="number" id="year" name="year" min="2020" max="2035" style="width: 80px;"><br /><br />
+            <label for="securNumber">Security Number:</label><br />
+            <input type="text" id="securNumber" maxlength="3" style="width: 40px;">
+          </fieldset>         
+        </div>
+        <div id="total">
+          <fieldset id="mountant">
+            <legend>Amount</legend>
+            <h3>Total (Before Taxes): <span id="totalBTaxes"></span> <span>CAD</span></h3>
+            <h3>Taxes: <span id="Taxes"></span> <span>CAD</span></h3>
+            <h3>Total (After Taxes): <span id="totalATaxes"></span> <span>CAD</span></h3>
+          </fieldset>
+        </div>       
+      </div>
+      <div id="billingSection">
+        <fieldset id="billing">
+          <legend>Personal Information:</legend>
+          <label for="name">First Name:</label><br />
+          <input type="text" id="name" name="name" maxlength="16"><br /><br />
+          <label for="lastname">Last Name:</label><br />
+          <input type="text" id="lastname" name="lastname" maxlength="16"><br /><br />
+          <label for="phonenumber">Phone Number:</label><br />
+          <input type="text" id="phonenumber" name="phonenumber" maxlength="16"><br /><br />
+        </fieldset>
+      </div>
+      <div id="AddressSection">
+        <fieldset id="Address">
+          <legend>Address</legend>
+          <label for="country">Country:</label><br />
+          <select name="country" id="country">
+            <option value="Canada">Canada</option>
+            <option value="USA">United States</option>
+            <option value="Colombia">Colombia</option>
+          </select><br /><br />
+          <label for="city">City:</label><br />
+          <input type="text" id="city" name="city" maxlength="16"><br /><br />
+          <label for="state">Province/State:</label><br />
+          <input type="text" id="state" name="state" maxlength="16"><br /><br />
+          <label for="street">Street:</label><br />
+          <input type="text" id="street" name="street" maxlength="16"><br /><br />
+          <label for="zipcode">Postal/Zip Code:</label><br />
+          <input type="text" id="zipcode" name="zipcode" maxlength="16"><br /><br />
+        </fieldset>
+      </div>
+    </form>
+  </div>
+  <input type="button" id="pay" value="Pay!" onclick="payValid()">
+ </body>
+</html>

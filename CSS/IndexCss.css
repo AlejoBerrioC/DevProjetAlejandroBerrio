@@ -1,0 +1,101 @@
+
+div.overlay{
+    position:fixed; 
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+div{
+    text-align:center;
+    padding: 5px;
+}
+
+div.upper{
+    float:left;
+	width:95%;
+	margin:1% 0% 1% 0%;
+    border:double;
+}
+
+div.lower{
+    float:left;
+	width:95%;
+    border:double;
+
+}
+
+
+div.upperLeft{
+    float:left;
+    width: 220px;
+    border:outset;
+    margin-top: 20px;
+}
+
+div.logo{
+    margin:5px;
+}
+
+div.logInSpace{
+    margin:5px;
+    border:1px solid;
+}
+
+
+div.nomSiteWeb{
+    margin: 10px 10px 0px 220px;
+}
+
+div.nomSiteWeb>h1{
+    color: goldenrod;
+    font-family: "Franklin Gothic Medium";
+    font-style: italic;
+    font-size:400%;
+    letter-spacing: 30px;
+    text-shadow: 10px 10px 8px black;
+}
+
+div.nomSiteWeb>h2{
+    color: black;
+    font-family: "Franklin Gothic Medium";
+    font-style: italic;
+    font-size:200%;
+    text-shadow: 10px 10px 10px gray;
+}
+
+div.menu{
+    float:left;
+    width: 220px;
+    border:outset;
+    height: 800px;
+}
+
+div.contenu{
+    margin:0px 10px 10px 240px;
+    height: 800px;
+}
+
+div.references{
+    border:double;
+    float:left;
+    margin-top: 5px;
+    width: 95%;
+
+}
+
+div.references>a{
+    text-decoration: none;
+    color: inherit;
+}
+
+div.references>a:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+
+
